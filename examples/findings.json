@@ -1,0 +1,50 @@
+{
+  "synthetic": true,
+  "purpose": "Illustrate an output contract; not a vendor alert schema or captured model output.",
+  "groups": [
+    {
+      "incident_keys": [
+        "demo-disk-01"
+      ],
+      "environment": "prod",
+      "category": "follow_up",
+      "title": "Reporting database — Repeated disk threshold crossings",
+      "reason": "Repeated crossings support a capacity review; time to exhaustion is unknown.",
+      "next_check": "Check growth and available space.",
+      "source_url": "https://example.com/incidents/demo-disk-01"
+    },
+    {
+      "incident_keys": [
+        "demo-sync-01"
+      ],
+      "environment": "prod",
+      "category": "follow_up",
+      "title": "Event worker — Recurring synchronization errors",
+      "reason": "Recovered incidents recur; replay success is not established.",
+      "next_check": "Confirm failed-message replay outcomes.",
+      "source_url": "https://example.com/incidents/demo-sync-01"
+    },
+    {
+      "incident_keys": [
+        "demo-task-01"
+      ],
+      "environment": "prod",
+      "category": "needs_verification",
+      "title": "Export task — Final outcome unknown",
+      "reason": "A failed attempt does not establish the final execution result.",
+      "next_check": "Check the final execution result.",
+      "source_url": "https://example.com/incidents/demo-task-01"
+    },
+    {
+      "incident_keys": [
+        "demo-cpu-01"
+      ],
+      "environment": "test",
+      "category": "observe",
+      "title": "Test worker — Recovered CPU threshold crossing",
+      "reason": "The supplied evidence does not demonstrate ongoing impact.",
+      "next_check": "Reassess on recurrence, longer execution or reported impact.",
+      "source_url": "https://example.com/incidents/demo-cpu-01"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Never commit local secrets or operational exports.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+.private/
+private/
+reports/
+__pycache__/
+.DS_Store
